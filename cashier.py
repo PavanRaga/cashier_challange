@@ -36,7 +36,7 @@ if __name__ == "__main__":
             if pp == ch:
                 change = "ZERO"
             elif ch < pp:
-                change = "ERROR"
+                change_words = "ERROR"
             elif ch > pp:
                 diff = (ch*10 - pp*10)/10 #avoid floating point precision error
                 while diff:
@@ -47,7 +47,7 @@ if __name__ == "__main__":
                     diff = diff - change
             print(change_words)
         else:
-            change = "ERROR"
+            change_words = "ERROR"
     else:
         print("Invalid format")
-        change = "ERROR"
+        change_words = "ERROR"
